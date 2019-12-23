@@ -188,7 +188,7 @@ def get_intersection(poly1, poly2):
     intersecting_coords = np.append(intersecting_coords, [intersecting_coords[0]], axis=0)
     x, y = intersecting_coords.T
 
-    print(f'The co-ordinates of intersection are {intersecting_coords}')
+    print(f'The co-ordinates of the overlapping quadrilateral are {intersecting_coords}')
     intersecting_coords[0][0]
     
     
