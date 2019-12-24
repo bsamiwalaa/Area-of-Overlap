@@ -192,6 +192,8 @@ def get_intersection(poly1, poly2):
     intersecting_coords[0][0]
     
     
+    #calculate the area of overlap using the co-ordinates of the quadrilateral of overlap
+    
     mat1=np.array([[intersecting_coords[0][0],intersecting_coords[1][0]],[intersecting_coords[0][1],intersecting_coords[1][1]]])
     mat2=np.array([[intersecting_coords[1][0],intersecting_coords[2][0]],[intersecting_coords[1][1],intersecting_coords[2][1]]])
     mat3=np.array([[intersecting_coords[2][0],intersecting_coords[3][0]],[intersecting_coords[2][1],intersecting_coords[3][1]]])
@@ -213,6 +215,7 @@ def get_intersection(poly1, poly2):
     plt.plot(x, y, c='k')
     plt.show()
 
+#taking the two paralleograms as follows
 poly1 = np.array([[200,200],
  [0,  0],
  [600, 0],
